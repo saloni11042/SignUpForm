@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Music Club Sign-Up</title>
+    <script
+      src="https://kit.fontawesome.com/4a9844f496.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <img
+          class="club-image"
+          src="./images/VIEW_590.jpeg"
+          alt="Music Club Image"
+        />
+      </div>
+      <div class="right-section">
+        <h2>Join the Music Club</h2>
+        <form id="musicClubForm">
+          <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="age">Input your age (years): </label>
+            <input
+              id="age"
+              type="number"
+              name="age"
+              min="5"
+              max="120"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Favorite Genres:</label>
+            <div class="checkbox-group">
+              <input type="checkbox" id="rock" name="genres" value="rock" />
+              <label for="rock">Rock</label>
+              <input type="checkbox" id="pop" name="genres" value="pop" />
+              <label for="pop">Pop</label>
+              <input
+                type="checkbox"
+                id="hipHop"
+                name="genres"
+                value="hip-hop"
+              />
+              <label for="hipHop">Hip Hop</label>
+              <input
+                type="checkbox"
+                id="indianClassical"
+                name="genres"
+                value="indian-classical"
+              />
+              <label for="indianClassical">Indian Classical</label>
+              <input
+                type="checkbox"
+                id="westernClassical"
+                name="genres"
+                value="western-classical"
+              />
+              <label for="westernClassical">Western Classical</label>
+            </div>
+            <div class="form-group">
+              <label for="bio">Provide a bio: </label>
+              <textarea
+                id="bio"
+                name="bio"
+                rows="3"
+                cols="30"
+                placeholder="I want to join Music Club because..."
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit">
+            <i class="icon fas fa-music"></i> Join Now
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("musicClubForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Welcome to the Music Club! Get ready for a musical journey.");
+        });
+    </script>
+  </body>
+</html>

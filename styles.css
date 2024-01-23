@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c6baa9;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+input[type="checkbox"] {
+  margin-top: -21px;
+}
+
+button {
+  background-color: #796b58;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #2e2d38;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.club-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.left-section {
+  flex: 1;
+  width: 5vw;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.form-group > label {
+  color: #9c6431;
+}
+h2 {
+  color: #2e2d38;
+}
